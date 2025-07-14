@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+import "./App.css";
+
+function App() {
+  const [showFullBio, setShowFullBio] = useState(false);
+
+  const shortBio = `Mr. Aditya Tuli, the driving force behind AT Hospitality Consultants, was born and raised in Chandigarh in a respected and influential family known for its values and entrepreneurial roots. A proud alumnus of Sherwood College, Nainital, Mr. Tuli brings over 35 years of hospitality experience marked by innovation, commitment, and instinctive excellence. He launched his first restaurant in Jalandhar in 1990, a visionary move that sparked a series of trendsetting ventures. Since then, he has crafted a legacy of spaces rooted in taste, originality, and profitability.`;
+
+  const fullBio = `${shortBio} His design legacy includes pioneering heavy wrought iron in furniture, gates, and interiors. He blends timeless strength with raw elegance. Beyond restaurants, he leads residential and commercial interior projects, infusing bold vision with functional class. As a consultant, he’s turned around loss-making ventures into successful, profitable destinations by applying strategic concepts, design, kitchen planning, culinary creativity, and business restructuring.\n\n"A strong concept is the soul of every successful venture."`;
+
+  return (
+    <div className="app">
+      <header className="hero">
+        <h1 className="gold-text">We Make Hospitality Work for You</h1>
+      </header>
+
+      <section className="about-ceo-box">
+        <div className="hero-content">
+          <img
+            src="https://via.placeholder.com/300x400"
+            alt="Mr. Aditya Tuli"
+            className="ceo-image"
+          />
+          <div className="ceo-bio">
+            <h2>About the CEO</h2>
+            <p>{showFullBio ? fullBio : shortBio}</p>
+            <button
+              className="read-more"
+              onClick={() => setShowFullBio(!showFullBio)}
+            >
+              {showFullBio ? "Read Less" : "Read More"}
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default App;
