@@ -1,0 +1,60 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #2c1b1b;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  padding: 40px;
+}
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.gold-text {
+  color: #e0c97d;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.about-ceo-box {
+  background-color: #3a2323;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.ceo-image {
+  border-radius: 12px;
+  max-width: 300px;
+  height: auto;
+}
+.ceo-bio {
+  max-width: 600px;
+}
+.ceo-bio h2 {
+  color: #e0c97d;
+  font-size: 1.8rem;
+}
+.ceo-bio p {
+  line-height: 1.7;
+  margin-top: 10px;
+}
+.read-more {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #e0c97d;
+  color: #e0c97d;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+.read-more:hover {
+  background-color: #e0c97d;
+  color: #2c1b1b;
+}
